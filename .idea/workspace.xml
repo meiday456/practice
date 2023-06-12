@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a9a82b58-b73e-40a3-8aa3-40dfa0322cbe" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/calc/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/.prettierrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/@types/type.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/public/fonts/NotoSansKR-Black.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/public/fonts/NotoSansKR-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/public/fonts/NotoSansKR-Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/public/fonts/NotoSansKR-Medium.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/public/fonts/NotoSansKR-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/public/fonts/NotoSansKR-Thin.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/public/fonts/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/assets/fonts/NotoSansKR-Black.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/assets/fonts/NotoSansKR-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/assets/fonts/NotoSansKR-Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/assets/fonts/NotoSansKR-Medium.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/assets/fonts/NotoSansKR-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/assets/fonts/NotoSansKR-Thin.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/assets/fonts/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/components/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/components/ButtonFrame.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/components/FontFace.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/components/Frame.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/components/GlobalStyle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/components/HistoryWindow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/components/NumberFrame.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/components/PresentWindow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/components/ResultWindow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/components/RightOperatorFrame.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/components/TopOperatorFrame.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/src/css/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/calc/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/calc/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/calc/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/calc/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/calc/src/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/calc/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/calc/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/calc/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/src/reportWebVitals.ts" beforeDir="false" afterPath="$PROJECT_DIR$/calc/src/reportWebVitals.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/calc/src/setupTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/calc/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/calc" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectId" id="2QzMsn6B5r7WbOjbOqxHbHz4FEU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/meiday/project/front/practice/apps",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/Users/meiday/project/front/practice",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "ts.external.directory.path": "/Users/meiday/project/front/practice/calc/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps" />
+      <recent name="$PROJECT_DIR$/calc" />
+      <recent name="$PROJECT_DIR$/apps/calculator" />
+      <recent name="$PROJECT_DIR$/apps/calculator/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="a9a82b58-b73e-40a3-8aa3-40dfa0322cbe" name="변경" comment="" />
+      <created>1686352165263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686352165263</updated>
+      <workItem from="1686352166681" duration="14800000" />
+      <workItem from="1686531847809" duration="5622000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/apps/calc/node_modules/tailwindcss/stubs/tailwind.config.js" />
+        <option value="$PROJECT_DIR$/apps/calc/node_modules/tailwindcss/stubs/tailwind.config.cjs" />
+      </list>
+    </option>
+  </component>
+</project>
