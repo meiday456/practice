@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9a82b58-b73e-40a3-8aa3-40dfa0322cbe" name="변경" comment="refactor(add Calc Code): 구현 로직을 clean code 적용&#10;&#10;add Calc Code callback function이 너무 지저분하게 작성되어 &#10;가독성과 확장성이 떨어져 함수화 및&#10;코드블럭을 간소화 시켰음">
-      <change afterPath="$PROJECT_DIR$/calc/src/pages/OtherCalc.jsx" afterDir="false" />
+    <list default="true" id="a9a82b58-b73e-40a3-8aa3-40dfa0322cbe" name="변경" comment="feat(KeyDownEventListener): add KeyDown Event&#10;&#10;Frame 컴포넌트에 KeyDown 이벤트 handler를 등록&#10;calcCode가 변경될 때 마다 useEffect로 재할당하도록&#10;개발">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calc" beforeDir="false" afterPath="$PROJECT_DIR$/calc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calc/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/calc/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/calc/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calc/src/components/Frame.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/calc/src/components/Frame.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calc/src/types/CalcatorTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/calc/src/types/CalcatorTypes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/calc" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="cb499973-d5fe-40a3-9673-df238247670b" />
@@ -49,27 +44,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/meiday/project/front/practice/apps&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/meiday/project/front/practice&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/meiday/project/front/practice/calc/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/meiday/project/front/practice/apps",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "/Users/meiday/project/front/practice/calc/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps" />
@@ -92,7 +87,9 @@
       <updated>1686352165263</updated>
       <workItem from="1686352166681" duration="14800000" />
       <workItem from="1686531847809" duration="31145000" />
-      <workItem from="1686976336303" duration="10575000" />
+      <workItem from="1686976336303" duration="14877000" />
+      <workItem from="1687070557812" duration="1026000" />
+      <workItem from="1687157572553" duration="2097000" />
     </task>
     <task id="LOCAL-00001" summary="feat(Calc,FirstUpload): Calculator 만듬&#10;&#10;계산기 동작만 하게 개발함&#10;이후 리팩토링 작업을 실시">
       <created>1686537942423</created>
@@ -122,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686986464256</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat(KeyDownEventListener): add KeyDown Event&#10;&#10;Frame 컴포넌트에 KeyDown 이벤트 handler를 등록&#10;calcCode가 변경될 때 마다 useEffect로 재할당하도록&#10;개발">
+      <created>1686989267709</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686989267709</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +137,7 @@
     <MESSAGE value="feat(Router): Router 삽입&#10;&#10;React Router 삽입" />
     <MESSAGE value="refactor(상수,불필요코드): 상수 추가, 불필요코드 정리&#10;&#10;버튼 레이아웃을 그리는 값을 상수로 처리하고 Utils.ts 파일에 집합시킴&#10;그리고 다른 상수격이나, 정규식 같은 반복 사용될만한&#10;값들을 Utils.ts로 이동&#10;&#10;불필요한 console.log 및 코드 정리" />
     <MESSAGE value="refactor(add Calc Code): 구현 로직을 clean code 적용&#10;&#10;add Calc Code callback function이 너무 지저분하게 작성되어 &#10;가독성과 확장성이 떨어져 함수화 및&#10;코드블럭을 간소화 시켰음" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(add Calc Code): 구현 로직을 clean code 적용&#10;&#10;add Calc Code callback function이 너무 지저분하게 작성되어 &#10;가독성과 확장성이 떨어져 함수화 및&#10;코드블럭을 간소화 시켰음" />
+    <MESSAGE value="feat(KeyDownEventListener): add KeyDown Event&#10;&#10;Frame 컴포넌트에 KeyDown 이벤트 handler를 등록&#10;calcCode가 변경될 때 마다 useEffect로 재할당하도록&#10;개발" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(KeyDownEventListener): add KeyDown Event&#10;&#10;Frame 컴포넌트에 KeyDown 이벤트 handler를 등록&#10;calcCode가 변경될 때 마다 useEffect로 재할당하도록&#10;개발" />
   </component>
 </project>
