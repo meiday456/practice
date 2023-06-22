@@ -106,7 +106,7 @@ const Frame = (): ReactElement => {
       })
       .filter(code => code != null)
       .flat();
-    const sum = eval(formula.join("")) ?? 0;
+    const sum = (eval(formula.join("")) ?? 0) as number;
     setCalcCodeArray([]);
 
     setResult(sum);
