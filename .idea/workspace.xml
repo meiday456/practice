@@ -5,8 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9a82b58-b73e-40a3-8aa3-40dfa0322cbe" name="변경" comment="feat(KeyDownEventListener): add KeyDown Event&#10;&#10;Frame 컴포넌트에 KeyDown 이벤트 handler를 등록&#10;calcCode가 변경될 때 마다 useEffect로 재할당하도록&#10;개발">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/src/App.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/src/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/src/reportWebVitals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/src/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/o_auth/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/jwt/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/jwt/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/jwt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/jwt/src/pages/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +84,7 @@
     "nodejs_package_manager_path": "yarn",
     "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
     "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "/Users/meiday/project/front/practice/calc/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/meiday/project/front/practice/jwt/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -90,6 +113,7 @@
       <workItem from="1686976336303" duration="14877000" />
       <workItem from="1687070557812" duration="1026000" />
       <workItem from="1687157572553" duration="2097000" />
+      <workItem from="1687498097224" duration="58000" />
     </task>
     <task id="LOCAL-00001" summary="feat(Calc,FirstUpload): Calculator 만듬&#10;&#10;계산기 동작만 하게 개발함&#10;이후 리팩토링 작업을 실시">
       <created>1686537942423</created>

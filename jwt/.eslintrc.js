@@ -38,13 +38,6 @@ module.exports = {
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-misused-promises": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        printWidth: 120,
-        endOfLine: "auto",
-      },
-    ],
     "@typescript-eslint/naming-convention": [
       "error",
       {

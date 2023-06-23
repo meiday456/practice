@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint  -c .eslintrc.js --fix  ./src",
-    "typecheck":"tsc --pretty --noEmit --project tsconfig.json"
+    "typecheck": "tsc --pretty --noEmit --project tsconfig.json"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@hookform/devtools": "^4.3.1",
     "@typescript-eslint/eslint-plugin": "^5.60.0",
     "@typescript-eslint/parser": "^5.60.0",
     "eslint": "^8.42.0",
@@ -57,6 +58,6 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^2.8.7"
+    "prettier": "^2.8.8"
   }
 }
