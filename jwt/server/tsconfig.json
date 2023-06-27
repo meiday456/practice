@@ -2,8 +2,9 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "module": "CommonJS",
-    "preserveValueImports": false
+    "preserveValueImports": false,
+    "typeRoots": ["./@types", "../node_modules/@types"]
   },
-  "include": ["./**/*.ts"],
+  "include": ["./**/*.ts", "./@types/**/*.d.ts"],
   "exclude": ["node_modules"]
 }

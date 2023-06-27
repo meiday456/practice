@@ -1,13 +1,113 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn {
+  position: relative;
+  border-radius: 5px;
+  background-color: tomato;
+  color: #fff;
+  font-weight: 700;
+  min-width: 100px;
+  min-height: 30px;
+}
+
+.btn:hover {
+  background-color: red;
+}
+.btn:active {
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.5);
+}
+
+.container {
+  display: flex;
+  position: relative;
+  padding: 50% 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.container input {
+  border: none;
+  border-bottom: 2px solid lightgray;
+}
+.container input:focus {
+  border-bottom-color: black;
+}
+
+.box {
+  width: 300px;
+  position: relative;
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+}
+
+.box form a:hover {
+  text-decoration: underline;
+}
+
+.box form > div:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form__header {
+  margin-top: 15px;
+}
+
+.form__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__body input {
+  max-width: 200px;
+  font-size: 18px;
+}
+
+.form__body input:focus {
+  outline: none;
+}
+
+.form__footer {
+  font-size: 14px;
+}
+
+.form__footer .find {
+  margin: 9px 0;
+}
+
+.form__footer .find li {
+  display: inline;
+}
+
+.form__footer .find li:last-of-type::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.form__footer .signUp {
+  margin-bottom: 10px;
 }

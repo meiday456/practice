@@ -46,7 +46,20 @@ const Practice = () => {
         <input {...register("example")} />
         {/* register 부분에서 required options를 전달하여 설정을 강제할수 있는듯 */}
         {/* required: Message | ValidationRule<boolean>; 필요 메세지를 전달 할 수 있다. */}
-        <input {...register("exampleRequired", {required: "필요해", max: 3, maxLength: 3})} />
+        <input
+          {...register("exampleRequired", {
+            required: "필요해",
+            max: 3,
+            maxLength: 3,
+            validate: {
+              t4est: (v) => {
+                console.log("v", v);
+                return parseInt(v) > 0;
+              },
+              lessThanTen: (v) => parseInt(v) < 10,
+            },
+          })}
+        />
         {errors.exampleRequired && <span>{errors.exampleRequired.message}</span>}
         {/* 다른 값들은 대부분 value, message obj 타입으로 전달이 가능할 것이다. */}
         <input {...register("example3", {required: true, minLength: {value: 4, message: "너무 짧아"}})} />
