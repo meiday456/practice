@@ -31,7 +31,7 @@ module.exports = {
   ],
   plugins: ["@typescript-eslint"],
   rules: {
-    // "@typescript-eslint/no-unsafe-call": "off",
+    "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-var-requires": "off",
@@ -56,4 +56,5 @@ module.exports = {
       },
     ],
   },
+  ignorePatterns: ["config-overrides.js"],
 };

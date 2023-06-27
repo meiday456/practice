@@ -1,17 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./reset.css";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import "./index.css";
 import App from "./pages/App";
+import Login from "./pages/Login";
 import Practice from "./pages/ReactHookFormPractice";
 import reportWebVitals from "./reportWebVitals";
-import {Routes, BrowserRouter, Route} from "react-router-dom";
-import Login from "./pages/Login";
+import "./reset.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/practice" element={<Practice />} />
