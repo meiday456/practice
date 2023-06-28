@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import "./index.css";
 import App from "./pages/App";
 import Login from "./pages/Login";
+import Main from "./pages/Main";
 import Practice from "./pages/ReactHookFormPractice";
 import reportWebVitals from "./reportWebVitals";
 import "./reset.css";
@@ -16,6 +17,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/practice" element={<Practice />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/main" element={<Main />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

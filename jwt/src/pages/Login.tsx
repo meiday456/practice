@@ -1,5 +1,6 @@
-import axios from "axios";
 import {SubmitHandler, useForm} from "react-hook-form";
+import {useNavigate} from "react-router-dom";
+import ApiUtil from "../util/ApiUtil";
 
 interface FormValues {
   id: string;
@@ -7,23 +8,30 @@ interface FormValues {
 }
 
 const Login = () => {
-  const {register, handleSubmit, reset, watch} = useForm<FormValues>();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    watch,
+    formState: {errors},
+  } = useForm<FormValues>();
+
+  const navigate = useNavigate();
+
   const submitHandler: SubmitHandler<FormValues> = async (data) => {
-    console.log(data);
-    const result = await axios.post("http://localhost:3001/login", data, {
+    const response = await ApiUtil.post<string>("/login", data, {
       headers: {"Content-Type": "application/x-www-form-urlencoded"},
-      withCredentials: true,
     });
-    // .then((response) => {
-    //   console.log(response);
-    // });
-    console.log("result", result);
+    const {data: message} = response;
+    if (message === "ok") {
+      navigate("/main");
+    }
   };
 
   return (
     <main className="container">
       <div className="box">
-        <form method="POST" action="http://localohost:3001/login" onSubmit={handleSubmit(submitHandler)}>
+        <form method="POST" onSubmit={handleSubmit(submitHandler)}>
           <div className="form__header">
             <h2>로그인</h2>
           </div>
@@ -32,18 +40,26 @@ const Login = () => {
               type="text"
               placeholder={"아이디"}
               {...register("id", {
-                minLength: 4,
+                required: true,
+                minLength: {
+                  value: 4,
+                  message: "아이디가 너무 짧아요",
+                },
               })}
             />
-            <input type="password" placeholder={"비밀번호"} {...register("pw", {minLength: 4})} />
+            {errors.id && <span>{errors.id.message}</span>}
+            <input
+              type="password"
+              placeholder={"비밀번호"}
+              {...register("pw", {
+                required: true,
+                minLength: {value: 4, message: "비밀번호가 너무 짧아요"},
+              })}
+            />
+            {errors.pw && <span>{errors.pw.message}</span>}
           </div>
           <div className="form__footer">
-            <input
-              className="btn"
-              type="submit"
-              value={"로그인"}
-              // onClick={submitHandler}
-            />
+            <input className="btn" type="submit" value={"로그인"} />
             <div className="find">
               <ul>
                 <li>

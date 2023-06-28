@@ -1,7 +1,7 @@
-import express from "express";
 import cookieParser from "cookie-parser";
-import {v4 as uuid} from "uuid";
 import cors from "cors";
+import express from "express";
+import {v4 as uuid} from "uuid";
 // import session from "express-session";
 
 const app = express();
@@ -23,16 +23,17 @@ app.use(cors({origin: ["http://localhost:3000"], credentials: true}));
 // );
 
 app.get("/", (req, res) => {
+  console.log(req.cookies);
   res.send("hello world");
 });
 
 app.post("/login", (req, res) => {
-  res.cookie("cookieId", uuid(), {
+  res.cookie("cookieId", encodeURIComponent(uuid()), {
     httpOnly: true,
     maxAge: 300000,
   });
 
-  res.send("login");
+  res.send("ok");
 });
 
 app.post("/logout", (req, res) => {
