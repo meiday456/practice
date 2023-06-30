@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import "./index.css";
 import App from "./pages/App";
-import Login from "./pages/Login";
+import CookieLogin from "./pages/CookieLogin";
 import Main from "./pages/Main";
 import Practice from "./pages/ReactHookFormPractice";
 import reportWebVitals from "./reportWebVitals";
@@ -16,7 +16,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/practice" element={<Practice />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login/cookie" element={<CookieLogin />} />
         <Route path="/main" element={<Main />} />
       </Routes>
     </BrowserRouter>

@@ -1,8 +1,21 @@
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import express from "express";
-import {v4 as uuid} from "uuid";
-// import session from "express-session";
+import {Client} from "pg";
+import CookieRouter from "./cookie/index";
+import whiteList from "./whiteList";
+
+const dbClient = new Client({
+  host: "127.0.0.1",
+  database: "dev",
+  port: 5432,
+  user: "postgres",
+  password: "meiday",
+});
+
+dbClient.connect().catch((error: Error) => {
+  console.log(`DB connection error : ${error.message}`);
+});
 
 const app = express();
 const port = 3001;
@@ -12,39 +25,24 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 
-app.use(cors({origin: ["http://localhost:3000"], credentials: true}));
-// app.use(
-//   session({
-//     secret: "meiday key",
-//     resave: false,
-//     saveUninitialized: true,
-//     cookie: {secure: true, httpOnly: true},
-//   }),
-// );
+app.use(cors({origin: whiteList, credentials: true}));
 
 app.get("/", (req, res) => {
   console.log(req.cookies);
   res.send("hello world");
 });
 
-app.post("/login", (req, res) => {
-  res.cookie("cookieId", encodeURIComponent(uuid()), {
-    httpOnly: true,
-    maxAge: 300000,
+app.use("/cookie", CookieRouter);
+
+app.get("/dbTest", (req, res) => {
+  dbClient.query(`SELECT name FROM node."user"`, (error, result) => {
+    if (error) {
+      res.sendStatus(500);
+    } else {
+      console.log("isOk?");
+      res.status(200).send(result.rows);
+    }
   });
-
-  res.send("ok");
-});
-
-app.post("/logout", (req, res) => {
-  console.log(req.cookies);
-  res.clearCookie("cookieId");
-  res.send("logout");
-});
-
-app.get("/check", (req, res) => {
-  console.log(req.cookies);
-  res.end();
 });
 
 app.listen(port, () => {
